@@ -1,5 +1,5 @@
 ﻿Feature: Login
-	As a seller I wanted to login to add skill to profile website
+	As a seller, I want to login profile website
 
 @mytag
 Scenario: [Login to website with valid credentials]

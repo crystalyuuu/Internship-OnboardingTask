@@ -74,11 +74,11 @@ namespace MarsQA_1.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Add languages]")]
+        [NUnit.Framework.DescriptionAttribute("[first Add languages]")]
         [NUnit.Framework.CategoryAttribute("tag1")]
         [NUnit.Framework.TestCaseAttribute("Chinese", "Native/Bilingual", null)]
         [NUnit.Framework.TestCaseAttribute("English", "Conversational", null)]
-        public virtual void AddLanguages(string language, string chooseLanguageLevel, string[] exampleTags)
+        public virtual void FirstAddLanguages(string language, string chooseLanguageLevel, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "tag1"};
@@ -90,7 +90,7 @@ namespace MarsQA_1.Feature
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("Language", language);
             argumentsOfScenario.Add("ChooseLanguageLevel", chooseLanguageLevel);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Add languages]", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[first Add languages]", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -125,15 +125,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Update languages]")]
+        [NUnit.Framework.DescriptionAttribute("[second Update languages]")]
         [NUnit.Framework.TestCaseAttribute("Japanese", "Basic", null)]
-        public virtual void UpdateLanguages(string languageUpdate, string updateChooseLanguageLevel, string[] exampleTags)
+        public virtual void SecondUpdateLanguages(string languageUpdate, string updateChooseLanguageLevel, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("LanguageUpdate", languageUpdate);
             argumentsOfScenario.Add("UpdateChooseLanguageLevel", updateChooseLanguageLevel);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Update languages]", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[second Update languages]", null, tagsOfScenario, argumentsOfScenario);
 #line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -168,12 +168,12 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Delete languages]")]
-        public virtual void DeleteLanguages()
+        [NUnit.Framework.DescriptionAttribute("[third Delete languages]")]
+        public virtual void ThirdDeleteLanguages()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Delete languages]", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[third Delete languages]", null, tagsOfScenario, argumentsOfScenario);
 #line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

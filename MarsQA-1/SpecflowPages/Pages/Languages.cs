@@ -1,4 +1,5 @@
 ﻿using MarsQA_1.Helpers;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -36,7 +37,7 @@ namespace MarsQA_1.SpecflowPages.Pages
         private static IWebElement deletedLanguage => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/thead[1]/tr/th[1]"));
         private static IWebElement deletedLanguageLevel => Driver.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/thead[1]/tr/th[2]"));
 
-
+        // Add new language function
         internal void AddLanguage(IWebDriver driver, string Language, string ChooseLanguageLevel)
         {
             languagePage.Click();
@@ -60,6 +61,7 @@ namespace MarsQA_1.SpecflowPages.Pages
             return actualLanguageLevel.Text;
         }
 
+        // Edit and update language function
         internal void EditLanguage(IWebDriver driver, string LanguageUpdate, string UpdateChooseLanguageLevel)
         {
             languagePage.Click();
@@ -83,6 +85,8 @@ namespace MarsQA_1.SpecflowPages.Pages
         {
             return editedLanguageLevel.Text;
         }
+
+        // Delete a language function
         internal void DeleteLanguage(IWebDriver driver)
         {
             languagePage.Click();
